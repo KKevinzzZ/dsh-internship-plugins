@@ -1,0 +1,12 @@
+/upstream/
+/deepseek-harness/
+/local/
+/WORKFLOW.md
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.dsh/
+.env
+.env.*
+!.env.example
