@@ -1,6 +1,7 @@
 /upstream/
 /deepseek-harness/
 /local/
+/evidence/
 /WORKFLOW.md
 node_modules/
 dist/

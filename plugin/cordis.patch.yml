@@ -1,0 +1,6 @@
+- insert:
+    - id: internship-custom-search
+      name: dsh-internship-plugin/custom-search
+    - id: internship-turn-trace
+      name: dsh-internship-plugin/turn-trace
+      disabled: true

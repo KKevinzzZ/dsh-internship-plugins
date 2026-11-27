@@ -1,0 +1,26 @@
+{
+  "name": "dsh-internship-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./custom-search": "./index.js",
+    "./custom-search/locale/*.json": "./locale/custom-search/*.json",
+    "./turn-trace": "./turn-trace.mjs",
+    "./turn-trace/locale/*.json": "./locale/turn-trace/*.json"
+  },
+  "engines": {
+    "dsh": "0.2.2-rc.5"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "0.2.2-rc.5"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
