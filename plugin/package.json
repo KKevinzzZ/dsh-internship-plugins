@@ -7,18 +7,32 @@
   "exports": {
     ".": "./index.js",
     "./package.json": "./package.json",
+    "./client": "./vision-preview-client.js",
     "./custom-search": "./index.js",
     "./custom-search/locale/*.json": "./locale/custom-search/*.json",
     "./turn-trace": "./turn-trace.mjs",
-    "./turn-trace/locale/*.json": "./locale/turn-trace/*.json"
+    "./turn-trace/locale/*.json": "./locale/turn-trace/*.json",
+    "./vision-preprocess": "./vision-preprocess.mjs",
+    "./vision-preprocess/locale/*.json": "./locale/vision-preprocess/*.json",
+    "./vision-preview": "./vision-preview-host.mjs",
+    "./vision-preview/locale/*.json": "./locale/vision-preview/*.json"
   },
   "engines": {
     "dsh": "0.2.2-rc.5"
   },
   "peerDependencies": {
+    "@deepseek-ai/cordis-plugin-loader": "1.1.0",
     "@deepseek-ai/dsh-tools": "0.2.2-rc.5"
   },
+  "dependencies": {
+    "sharp": "0.35.5",
+    "zod": "4.6.6"
+  },
   "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-chat", "@deepseek-ai/dsh-client-ui-conversation"]
+    },
     "bundle": {
       "patch": "./cordis.patch.yml"
     }

@@ -4,3 +4,8 @@
     - id: internship-turn-trace
       name: dsh-internship-plugin/turn-trace
       disabled: true
+    - id: internship-vision-preprocess
+      name: dsh-internship-plugin/vision-preprocess
+      disabled: true
+    - id: internship-vision-preview
+      name: dsh-internship-plugin/vision-preview

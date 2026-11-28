@@ -2,6 +2,7 @@
 /deepseek-harness/
 /local/
 /evidence/
+/experiments/
 /WORKFLOW.md
 node_modules/
 dist/
